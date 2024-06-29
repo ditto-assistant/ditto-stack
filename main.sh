@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# copy .env into assistant and nl_server
+cp .env assistant/.env
+cp .env nlp_server/.env
+
 # Start the first process
 ./assistant.sh &
 
