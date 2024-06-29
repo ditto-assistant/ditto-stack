@@ -8,6 +8,7 @@ RUN apt update && \
 RUN git clone https://github.com/ditto-assistant/ditto-stack.git --recurse-submodules
 
 COPY .env ./ditto-stack/.env
+COPY assistant/resources ./ditto-stack/assistant/resources
 COPY assistant/requirements.txt ./assistant_requirements.txt
 COPY nlp_server/requirements.txt ./nlp_server_requirements.txt
 COPY vision_server/requirements.txt ./vision_server_requirements.txt
