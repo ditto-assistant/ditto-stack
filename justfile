@@ -10,13 +10,13 @@ run:
 
 # Run container, interactive mode
 run-it:
-    docker run --device /dev/dsp:/dev/dsp --env-file .env -it -p 42030-42031:42032-42033 --name ditto-stack ditto-stack
+    docker run --env-file .env -it -p 42030-42031:42032-42033 --name ditto-stack ditto-stack
 
 logs:
-    docker logs -f assistant
+    docker logs -f ditto-stack
 
 stop:
-    docker stop assistant
+    docker stop ditto-stack
 
 # copy .env.example to .env and edit it to your needs
 dotenv:
