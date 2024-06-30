@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# copy .env into assistant and nl_server
+# copy .env into assistant and nlp_server
 cp .env assistant/.env
 cp .env nlp_server/.env
 

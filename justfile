@@ -2,15 +2,15 @@ set dotenv-load
 
 # Run container, detaching (daemonize) and removing container once stopped. Good for dev.
 run-rm:
-    docker run -d --rm --env-file .env -p 22032-32032:32033-42032 --name ditto-stack ditto-stack
+    docker run -d --rm --env-file .env -p 42030-42031:42032-42033 --name ditto-stack ditto-stack
 
 # Run container, detaching (daemonize)
 run:
-    docker run -d --env-file .env -p 22032:42032 --name ditto-stack ditto-stack
+    docker run -d --env-file .env -p 42030-42031:42032-42033 --name ditto-stack ditto-stack
 
 # Run container, interactive mode
 run-it:
-    docker run --device /dev/dsp:/dev/dsp --env-file .env -it -p 22032-32032:32033-42032 --name ditto-stack ditto-stack
+    docker run --device /dev/dsp:/dev/dsp --env-file .env -it -p 42030-42031:42032-42033 --name ditto-stack ditto-stack
 
 logs:
     docker logs -f assistant

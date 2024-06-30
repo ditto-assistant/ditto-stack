@@ -21,8 +21,8 @@ RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 42032
-EXPOSE 32032
-EXPOSE 22032
+EXPOSE 42031
+EXPOSE 42030
 
 # tried to enable coreaudio to make the mac container work
 # ENV SDL_AUDIODRIVER coreaudio
