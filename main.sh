@@ -11,7 +11,7 @@ cp .env nlp_server/.env
 ./nlp_server.sh &
 
 # Start the third process
-./vision_server.sh
+# ./vision_server.sh
 
 # Wait for any process to exit
 wait -n
