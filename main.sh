@@ -4,6 +4,13 @@
 cp .env assistant/.env
 cp .env nlp_server/.env
 
+# if users.json exists, copy it into nlp_server/, else create it by copying example.users.json into nlp_server/ as users.json
+if [ -f users.json ]; then
+    cp users.json nlp_server/users.json
+else
+    cp example.users.json nlp_server/users.json
+fi
+
 # Start the first process
 ./assistant.sh &
 

@@ -1,0 +1,12 @@
+[submodule "assistant"]
+	path = assistant
+	url = https://github.com/ditto-assistant/assistant.git
+[submodule "ditto-app"]
+	path = ditto-app
+	url = https://github.com/ditto-assistant/ditto-app.git
+[submodule "vision_server"]
+	path = vision_server
+	url = https://github.com/ditto-assistant/vision_server.git
+[submodule "nlp_server"]
+	path = nlp_server
+	url = https://github.com/ditto-assistant/nlp_server.git
