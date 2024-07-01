@@ -19,8 +19,6 @@ COPY nlp_server.sh ./ditto-stack/nlp_server.sh
 RUN pip install --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt 
 
-EXPOSE 42032
-EXPOSE 42031
-EXPOSE 42030
+EXPOSE 42030 42031 42032
 
 CMD cd ditto-stack && ./main.sh
