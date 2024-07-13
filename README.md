@@ -6,7 +6,7 @@ Spin up the full Ditto stack locally (Mac / Windows / Linux ) via Docker with GU
 2. Install [Docker](https://www.docker.com/).
 
 ### Optional Setup for Host Machine
-1. Edit Dockerfile to your liking (if you care to run [nlp_server](https://github.com/ditto-assistant/nlp_server) or [vision_server](https://github.com/ditto-assistant/vision_server) elewhere)
+1. Edit Dockerfile to your liking (if you care to run [nlp_server](https://github.com/ditto-assistant/nlp_server) // [vision_server](https://github.com/ditto-assistant/vision_server) // [assistant](https://github.com/ditto-assistant/assistant) elewhere)
     - Simply uncomment / comment the services you want to run in your stack.
 2. Install [OpenSCAD](https://openscad.org/) compiler for Prompt -> Instant 3D design feature!
 3. Install [Python](https://www.python.org/) or [Anaconda Python](https://www.anaconda.com/) to your host machine for Prompt -> Instant Python Code Compilation + GUI
