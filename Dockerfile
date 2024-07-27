@@ -11,7 +11,9 @@ COPY .env ./ditto-stack/.env
 COPY assistant/resources ./ditto-stack/assistant/resources
 COPY requirements.txt ./requirements.txt
 COPY users.json ./ditto-stack/users.json
-COPY main.sh ./ditto-stack/main.sh
+COPY ./scripts/main.sh ./ditto-stack/main.sh
+
+## Comment / Uncomment the following lines to enable / disable the respective services
 COPY assistant.sh ./ditto-stack/assistant.sh
 COPY nlp_server.sh ./ditto-stack/nlp_server.sh
 # COPY vision_server.sh ./ditto-stack/vision_server.sh
