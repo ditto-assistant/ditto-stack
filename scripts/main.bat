@@ -12,16 +12,16 @@ if exist users.json (
 )
 
 REM Start the first process
-start "" assistant.bat
+start "" scripts\assistant.bat
 
 REM Start the second process
-start "" nlp_server.bat
+start "" scripts\nlp_server.bat
 
 REM Start the third process
-start "" vision_server.bat
+start "" scripts\vision_server.bat
 
 REM Start the fourth process
-start "" gui.bat    
+start "" scripts\gui.bat    
 
 REM keep running
 pause
